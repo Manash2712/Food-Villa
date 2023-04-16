@@ -1871,20 +1871,20 @@ const HeaderComponent = () => {
     )
 }
 
-const burgerKing = {
-    name: "Burger King",
-    image: "https://b.zmtcdn.com/data/pictures/chains/6/18347416/c9fbbf2eed4d4ab83ce63b114e76b57f.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
-    cuisines: ["Burger", "American"],
-    rating: "4.2"
-}
+// const burgerKing = {
+//     name: "Burger King",
+//     image: "https://b.zmtcdn.com/data/pictures/chains/6/18347416/c9fbbf2eed4d4ab83ce63b114e76b57f.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+//     cuisines: ["Burger", "American"],
+//     rating: "4.2"
+// }
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
     return (
         <div className="card">
-            <img src={burgerKing.image} alt="burger" />
-            <h2>{burgerKing.name}</h2>
-            <h3>{burgerKing.cuisines.join(', ')}</h3>
-            <h4>{burgerKing.rating} stars</h4>
+            <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant.data?.cloudinaryImageId} alt="burger" />
+            <h2>{props.restaurant.data?.name}</h2>
+            <h3>{props.restaurant.data?.cuisines.join(', ')}</h3>
+            <h4>{props.restaurant.data?.lastMileTravelString}</h4>
         </div>
     )
 }
@@ -1892,17 +1892,12 @@ const RestaurantCard = () => {
 const Body = () => {
     return (
         <div className="restaurant-list">
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
+            <RestaurantCard restaurant={restaurantList[0]} />
+            <RestaurantCard restaurant={restaurantList[1]} />
+            <RestaurantCard restaurant={restaurantList[2]} />
+            <RestaurantCard restaurant={restaurantList[3]} />
+            <RestaurantCard restaurant={restaurantList[4]} />
+            <RestaurantCard restaurant={restaurantList[5]} />
         </div>
     )
 }
