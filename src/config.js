@@ -1,35 +1,17 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-
-/**********
- * AppLayout
- * 
- * Header
-        Logo
-        Nav items(right side)
-        Cart
-    Body
-        Search bar
-        Restaurant list
-            Restaurant Card
-                Image
-                Name
-                Rating
-                Cuisines
-    Footer
-        Links
-        Copyright
- * 
- * 
- **********/
+export const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
 
 
-// const Title = React.createElement(
-//     "h1", {id: "title"}, "Food Villa"
-// )
+// const burgerKing = {
+//     name: "Burger King",
+//     image: "https://b.zmtcdn.com/data/pictures/chains/6/18347416/c9fbbf2eed4d4ab83ce63b114e76b57f.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+//     cuisines: ["Burger", "American"],
+//     rating: "4.2"
+// }
+
+
 
 // RestaurantList is JSON Data for displaying cards
-const restaurantList = [
+export const restaurantList = [
     {
         type: "restaurant",
         data: {
@@ -1846,89 +1828,3 @@ const restaurantList = [
         subtype: "basic",
     },
 ];
-
-const Title = () => {
-    return (
-        <h1 id="title">
-            <a href="/">Food Villa</a>
-        </h1>
-    )
-}
-
-const HeaderComponent = () => {
-    return (
-        <div className="header">
-            <Title />
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-// const burgerKing = {
-//     name: "Burger King",
-//     image: "https://b.zmtcdn.com/data/pictures/chains/6/18347416/c9fbbf2eed4d4ab83ce63b114e76b57f.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
-//     cuisines: ["Burger", "American"],
-//     rating: "4.2"
-// }
-
-const RestaurantCard = ({ name, cuisines, cloudinaryImageId, lastMileTravelString }) => {
-    // const { name, cuisines, cloudinaryImageId, lastMileTravelString } = restaurant.data;
-    return (
-        <div className="card">
-            <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId} alt="burger" />
-            {/* <h2>{props.restaurant.data?.name}</h2> */}
-            <h2>{name}</h2>
-            <h3>{cuisines.join(', ')}</h3>
-            <h4>{lastMileTravelString}</h4>
-        </div>
-    )
-}
-
-const Body = () => {
-    return (
-        <div className="restaurant-list">
-
-            {/* <RestaurantCard {...restaurantList[0].data} /> */}
-            {/* using spread operator to pass multiple props */}
-            {
-                restaurantList.map(restaurant => {
-                    return <RestaurantCard {...restaurant.data} />
-                })
-            }
-            {/* <RestaurantCard restaurant={restaurantList[0]} />
-            <RestaurantCard restaurant={restaurantList[1]} />
-            <RestaurantCard restaurant={restaurantList[2]} />
-            <RestaurantCard restaurant={restaurantList[3]} />
-            <RestaurantCard restaurant={restaurantList[4]} />
-            <RestaurantCard restaurant={restaurantList[5]} /> */}
-        </div>
-    )
-}
-
-const Footer = () => {
-    return (
-        <h4>Footer</h4>
-    )
-}
-
-const AppLayout = () => {
-    return (
-        <>
-            <HeaderComponent />
-            <Body />
-            <Footer />
-        </>
-
-    )
-}
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<AppLayout />)
