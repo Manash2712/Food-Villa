@@ -2,7 +2,12 @@ import { restaurantList } from "../config"
 import RestaurantCard from "./RestaurantCard"
 import { useState } from "react";
 
+function filterData(searchText, restaurants) {
+    return restaurants.filter((restaurant) => restaurant.data.name.includes(searchText))
+}
+
 const Body = () => {
+    const [restaurants, setRestaurants] = useState(restaurantList)
     const [searchText, setSearchText] = useState('');
     return (
         <>
@@ -13,14 +18,21 @@ const Body = () => {
                     value={searchText}
                     onChange={(e) => { setSearchText(e.target.value) }}
                 />
-                <button className="search-btn">Search</button>
+                <button
+                    className="search-btn"
+                    onClick={() => {
+                        // update the restaurants
+                        const data = filterData(searchText, restaurants);
+                        setRestaurants(data)
+                    }}
+                >Search</button>
             </div>
             <div className="restaurant-list">
 
                 {/* <RestaurantCard {...restaurantList[0].data} /> */}
                 {/* using spread operator to pass multiple props */}
                 {
-                    restaurantList.map(restaurant => {
+                    restaurants.map((restaurant, key = restaurant.data?.uuid) => {
                         return <RestaurantCard {...restaurant.data} />
                     })
                 }

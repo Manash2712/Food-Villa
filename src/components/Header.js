@@ -3,6 +3,8 @@
 //     "h1", {id: "title"}, "Food Villa"
 // )
 
+import { useState } from "react"
+
 export const Title = () => {
     return (
         <h1 id="title">
@@ -12,9 +14,12 @@ export const Title = () => {
 }
 
 const HeaderComponent = () => {
+    // const [title, setTitle] = useState('Food Villa');
     return (
         <div className="header">
             <Title />
+            {/* <h1>{title}</h1> */}
+            {/* <button onClick={() => title === 'Food Villa' ? setTitle('New Food App') : setTitle('Food Villa')}>Change Title</button> */}
             <div className="nav-items">
                 <ul>
                     <li>Home</li>
