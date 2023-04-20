@@ -5,6 +5,7 @@
 
 import { useState } from "react"
 
+
 export const Title = () => {
     return (
         <h1 id="title">
@@ -15,6 +16,11 @@ export const Title = () => {
 
 const HeaderComponent = () => {
     // const [title, setTitle] = useState('Food Villa');
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+    const toggleLogedIn = () => {
+        isLoggedIn ? setIsLoggedIn(false) : setIsLoggedIn(true);
+    }
     return (
         <div className="header">
             <Title />
@@ -28,6 +34,11 @@ const HeaderComponent = () => {
                     <li>Cart</li>
                 </ul>
             </div>
+            {
+                isLoggedIn ? <button onClick={toggleLogedIn}>LogOut</button> : <button onClick={toggleLogedIn}>LogIn</button>
+            }
+
+
         </div>
     )
 }
