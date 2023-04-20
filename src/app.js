@@ -9,6 +9,7 @@ import { Title } from "./components/Header"
 import Body from "./components/Body"
 import Footer from "./components/Footer";
 import { IMG_CDN_URL } from "./config";
+import { createBrowserRouter } from "react-router-dom";
 
 
 /**********
@@ -33,6 +34,12 @@ import { IMG_CDN_URL } from "./config";
  * 
  **********/
 
+
+const appRouter = createBrowserRouter([
+    {
+
+    }
+])
 
 const AppLayout = () => {
     return (

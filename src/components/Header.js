@@ -4,13 +4,14 @@
 // )
 
 import { useState } from "react"
+import Logo from "../assets/img/foodvilla.png"
 
 
 export const Title = () => {
     return (
-        <h1 id="title">
-            <a href="/">Food Villa</a>
-        </h1>
+        <a href="/">
+            <img className="logo" src={Logo} alt="logo" />
+        </a>
     )
 }
 

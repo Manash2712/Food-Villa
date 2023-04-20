@@ -34,3 +34,14 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
+.logo {
+    height: 90px;
+}
+
+.shimmer-card {
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    margin: 20px;
+}
