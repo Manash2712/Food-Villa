@@ -1,16 +1,3 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-
-// default Import used for components exported as default
-// in default export we can change the name while importing
-import HeaderComponent from "./components/Header";
-// Named Import
-import { Title } from "./components/Header"
-import Body from "./components/Body"
-import Footer from "./components/Footer";
-import { IMG_CDN_URL } from "./config";
-import { createBrowserRouter } from "react-router-dom";
-
 
 /**********
  * AppLayout
@@ -34,12 +21,20 @@ import { createBrowserRouter } from "react-router-dom";
  * 
  **********/
 
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-const appRouter = createBrowserRouter([
-    {
+// default Import used for components exported as default
+// in default export we can change the name while importing
+import HeaderComponent from "./components/Header";
+// Named Import
+import { Title } from "./components/Header"
+import Body from "./components/Body"
+import Footer from "./components/Footer";
+import { IMG_CDN_URL } from "./config";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/About";
 
-    }
-])
 
 const AppLayout = () => {
     return (
@@ -48,10 +43,20 @@ const AppLayout = () => {
             <Body />
             <Footer />
         </>
-
     )
 }
 
+const appRouter = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppLayout />
+    },
+    {
+        path: "/about",
+        element: <About />
+    }
+
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<AppLayout />)
+root.render(<RouterProvider router={appRouter} />)
