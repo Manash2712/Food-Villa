@@ -34,6 +34,7 @@ import Footer from "./components/Footer";
 import { IMG_CDN_URL } from "./config";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
+import Error from "./components/Error"
 
 
 const AppLayout = () => {
@@ -49,13 +50,13 @@ const AppLayout = () => {
 const appRouter = createBrowserRouter([
     {
         path: "/",
-        element: <AppLayout />
+        element: <AppLayout />,
+        errorElement: <Error />
     },
     {
         path: "/about",
         element: <About />
     }
-
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
