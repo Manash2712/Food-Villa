@@ -2,6 +2,7 @@ import { restaurantList } from "../config"
 import RestaurantCard from "./RestaurantCard"
 import { useState, useEffect } from "react";
 import ShimmerUI from "./ShimmerUI";
+import { Link } from "react-router-dom";
 
 function filterData(searchText, restaurants) {
     return restaurants.filter((restaurant) => restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase()))
@@ -18,7 +19,7 @@ const Body = () => {
     }, [])
 
     async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5879534&lng=73.7372559&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         // console.log(json);
         // optional chaining
@@ -61,7 +62,8 @@ const Body = () => {
                 {/* Logic for no restaurant found for search */}
                 {
                     filteredRestaurants.map((restaurant) => {
-                        return <RestaurantCard {...restaurant.data} key={restaurant.data?.uuid} />
+                        return (
+                            <Link to={"/restaurant/" + restaurant?.data?.id} key={restaurant.data?.uuid}><RestaurantCard {...restaurant.data} /></Link>)
                     })
                 }
                 {/* <RestaurantCard restaurant={restaurantList[0]} />
