@@ -37,7 +37,8 @@ import About from "./components/About";
 import Error from "./components/Error"
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
-import Profile from "./components/Profile";
+import Profile from "./components/ProfileClass";
+import ProfileFunctional from "./components/Profile"
 
 
 const AppLayout = () => {
@@ -65,10 +66,14 @@ const appRouter = createBrowserRouter([
                 path: "/about",
                 element: <About />,
                 children: [
+                    // {
+                    //     path: "profile",
+                    //     element: <><ProfileFunctional name="Manash" /><Profile /></> 
+                    // },
                     {
                         path: 'profile', // we don't use /profile here as it will redirect to /profile
-                        element: <Profile />
-                    }
+                        element: <><ProfileFunctional name="Manash" /><Profile name="ManashClass" /></>
+                    },
                 ]
             },
             {
