@@ -37,6 +37,7 @@ import About from "./components/About";
 import Error from "./components/Error"
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Profile from "./components/Profile";
 
 
 const AppLayout = () => {
@@ -62,7 +63,13 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <About />
+                element: <About />,
+                children: [
+                    {
+                        path: 'profile', // we don't use /profile here as it will redirect to /profile
+                        element: <Profile />
+                    }
+                ]
             },
             {
                 path: "/contact",
