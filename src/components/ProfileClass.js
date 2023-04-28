@@ -29,6 +29,10 @@ class Profile extends React.Component {
     componentDidUpdate() {
         console.log("Child ComponentDidUpdate");
     }
+
+    componentWillUnmount() {
+        console.log("ComponentWillUnmount");
+    }
     render() {
         console.log("Child-render " + this.props.name);
         // return (
