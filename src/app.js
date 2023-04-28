@@ -62,19 +62,23 @@ const appRouter = createBrowserRouter([
                 path: "/",
                 element: <Body />
             },
+            // {
+            //     path: "/about",
+            //     element: <About />,
+            //     children: [
+            //         // {
+            //         //     path: "profile",
+            //         //     element: <><ProfileFunctional name="Manash" /><Profile /></> 
+            //         // },
+            //         {
+            //             path: 'profile', // we don't use /profile here as it will redirect to /profile
+            //             element: <><ProfileFunctional name="Manash" /><Profile name="ManashClass" /></>
+            //         },
+            //     ]
+            // },
             {
                 path: "/about",
                 element: <About />,
-                children: [
-                    // {
-                    //     path: "profile",
-                    //     element: <><ProfileFunctional name="Manash" /><Profile /></> 
-                    // },
-                    {
-                        path: 'profile', // we don't use /profile here as it will redirect to /profile
-                        element: <><ProfileFunctional name="Manash" /><Profile name="ManashClass" /></>
-                    },
-                ]
             },
             {
                 path: "/contact",
