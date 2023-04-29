@@ -21,7 +21,7 @@
  * 
  **********/
 
-import React from "react"
+import React, { lazy, Suspense } from "react"
 import ReactDOM from "react-dom/client"
 
 // default Import used for components exported as default
@@ -39,6 +39,20 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/ProfileClass";
 import ProfileFunctional from "./components/Profile"
+import ShimmerUI from "./components/ShimmerUI";
+// import Instamart from "./components/Instamart";
+
+
+/* All are same!
+ * Chunking
+ * Code Splitting
+ * Dynamic Bundling
+ * Lazy Loading
+ * On Demand Loading
+ * Dynamic Import
+ */
+
+const Instamart = lazy(() => import("./components/Instamart"))
 
 
 const AppLayout = () => {
@@ -87,6 +101,14 @@ const appRouter = createBrowserRouter([
             {
                 path: "/restaurant/:id",
                 element: <RestaurantMenu />
+            },
+            {
+                path: "/instamart",
+                element: (
+                    <Suspense fallback={<ShimmerUI />}>
+                        <Instamart />
+                    </Suspense>
+                ),
             }
         ]
     },
