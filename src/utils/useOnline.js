@@ -6,17 +6,29 @@ const useOnline = () => {
 
     useEffect(() => {
         //inside useEffect with empty dependency array because we want it to run once
-        window.addEventListener("online", () => {
-            // this code will trigger when we are online
+
+        const handleOnline = () => {
             setIsOnline(true)
-        })
-        window.addEventListener("offline", () => {
-            // this code will trigger when we are online
+        }
+        const handleOffline = () => {
             setIsOnline(false)
-        })
+        }
+        // window.addEventListener("online", () => {
+        //     //this code will trigger when we are online
+        //     handleOnline()
+        // })
+        window.addEventListener("online", handleOnline)
+        window.addEventListener("offline", handleOffline)
+        // window.addEventListener("offline", () => {
+        //     // this code will trigger when we are online
+        //     handleOffline
+        // });
+
+        return () => {
+            window.removeEventListener("online", handleOnline)
+            window.removeEventListener("offline", handleOffline)
+        }
     }, [])
-
-
 
     return isOnline; // returns true or false
 }

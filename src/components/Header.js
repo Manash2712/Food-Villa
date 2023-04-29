@@ -6,6 +6,7 @@
 import { useState } from "react"
 import Logo from "../assets/img/foodvilla.png"
 import { Link } from "react-router-dom"
+import useOnline from "../utils/useOnline"
 
 export const Title = () => {
     return (
@@ -18,6 +19,8 @@ export const Title = () => {
 const HeaderComponent = () => {
     // const [title, setTitle] = useState('Food Villa');
     const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+    const isOnline = useOnline();
 
     const toggleLogedIn = () => {
         isLoggedIn ? setIsLoggedIn(false) : setIsLoggedIn(true);
@@ -35,9 +38,13 @@ const HeaderComponent = () => {
                     <li>Cart</li>
                 </ul>
             </div>
+            <h1>{isOnline ? '🟢' : '🔴'}</h1>
             {
-                isLoggedIn ? <button onClick={toggleLogedIn}>LogOut</button> : <button onClick={toggleLogedIn}>LogIn</button>
-            }
+                isLoggedIn ? (
+                    <button onClick={toggleLogedIn}>LogOut</button>
+                ) : (
+                    <button onClick={toggleLogedIn}>LogIn</button>
+                )}
 
 
         </div>

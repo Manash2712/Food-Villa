@@ -26,11 +26,11 @@ const Body = () => {
         setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards)
     }
 
-    const isOnline = useOnline();
+    // const isOnline = useOnline();
 
-    if (!isOnline) {
-        return <h1>🔴Offline, please check your internet connection!!</h1>
-    }
+    // if (!isOnline) {
+    //     return <h1>🔴Offline, please check your internet connection!!</h1>
+    // }
 
     // Conditional rendering
     // if restaurant is empty => shimmer UI
