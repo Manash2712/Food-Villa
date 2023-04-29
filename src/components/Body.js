@@ -3,10 +3,9 @@ import RestaurantCard from "./RestaurantCard"
 import { useState, useEffect } from "react";
 import ShimmerUI from "./ShimmerUI";
 import { Link } from "react-router-dom";
+import { filterData } from "../utils/helper";
+import useOnline from "../utils/useOnline";
 
-function filterData(searchText, restaurants) {
-    return restaurants.filter((restaurant) => restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase()))
-}
 
 const Body = () => {
 
@@ -25,6 +24,12 @@ const Body = () => {
         // optional chaining
         setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards)
         setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards)
+    }
+
+    const isOnline = useOnline();
+
+    if (!isOnline) {
+        return <h1>🔴Offline, please check your internet connection!!</h1>
     }
 
     // Conditional rendering

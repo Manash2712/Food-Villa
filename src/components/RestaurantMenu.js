@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { IMG_CDN_URL } from "../config";
 import ShimmerUI from "./ShimmerUI";
+import useRestaurant from "../utils/useRestaurant";
 
 const RestaurantMenu = () => {
     const params = useParams();
@@ -9,6 +10,9 @@ const RestaurantMenu = () => {
     const { id } = params;
     // or
     // const {id} = useParams();
+
+    /*
+    code in useRestaurant
 
     const [restaurant, setRestaurant] = useState(null);
 
@@ -28,9 +32,10 @@ const RestaurantMenu = () => {
     useEffect(() => {
         getRestaurantinfo();
     }, [])
+    
+    */
 
-
-
+    const restaurant = useRestaurant(id);
 
     return (!restaurant) ? <ShimmerUI /> : (
         <div className="menu">
