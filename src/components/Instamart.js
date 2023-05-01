@@ -6,8 +6,8 @@ const Section = ({ title, description, isVisible, setIsVisible }) => {
         <div className="border border-black p-2 m-2">
             <h3 className="font-bold text-xl">{title}</h3>
             {isVisible ?
-                <button onClick={() => setIsVisible(false)} className="cursor-pointer underline">Hide</button> :
-                <button onClick={() => setIsVisible(true)} className="cursor-pointer underline">Show</button>
+                <button onClick={() => setIsVisible("")} className="cursor-pointer underline">Hide</button> :
+                <button onClick={() => setIsVisible(title)} className="cursor-pointer underline">Show</button>
             }
 
             {isVisible && <p>{description}</p>}
@@ -16,48 +16,38 @@ const Section = ({ title, description, isVisible, setIsVisible }) => {
 }
 
 const Instamart = () => {
-    const [sectionConfig, setSectionConfig] = useState({
-        showAbout: true,
-        showTeam: false,
-        showCareers: true,
-        showProduct: true,
-        showDetails: true,
-    })
+    // const [sectionConfig, setSectionConfig] = useState({
+    //     showAbout: true,
+    //     showTeam: false,
+    //     showCareers: true,
+    //     showProduct: true,
+    //     showDetails: true,
+    // })
     // const [isVisible, setIsVisible] = useState(false);
+
+    const [visibleSection, setVisibleSection] = useState("about");
     return (
         <div>
             <h1 className="text-3xl p-2 m-2 font-bold">Instamart</h1>
             <Section
-                title={"About Instamart"}
+                title={"About"}
                 description={
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos temporibus nulla quis voluptates minima minus laudantium exercitationem officiis culpa soluta eveniet nihil commodi molestiae, deserunt ducimus beatae praesentium iusto cupiditate. Vitae voluptate voluptatum, temporibus laboriosam nisi, repudiandae inventore hic incidunt quam corrupti sint. Recusandae a veniam necessitatibus optio culpa omnis cupiditate. Pariatur facere soluta voluptas quasi porro atque temporibus!"
                 }
-                isVisible={sectionConfig.showAbout}
-                setIsVisible={() => {
-                    setSectionConfig({
-                        showAbout: true,
-                        showTeam: false,
-                        showCareers: false,
-                        showProduct: false,
-                        showDetails: false,
-                    })
+                isVisible={visibleSection === "about"}
+                setIsVisible={(title) => {
+                    setVisibleSection(title.toLowerCase())
                 }}
             />
 
             <Section
-                title={"Team Instamart"}
+                title={"Team"}
                 description={
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos temporibus nulla quis voluptates minima minus laudantium exercitationem officiis culpa soluta eveniet nihil commodi molestiae, deserunt ducimus beatae praesentium iusto cupiditate. Vitae voluptate voluptatum, temporibus laboriosam nisi, repudiandae inventore hic incidunt quam corrupti sint. Recusandae a veniam necessitatibus optio culpa omnis cupiditate. Pariatur facere soluta voluptas quasi porro atque temporibus!"
                 }
-                isVisible={sectionConfig.showTeam}
-                setIsVisible={() => {
-                    setSectionConfig({
-                        showAbout: false,
-                        showTeam: true,
-                        showCareers: false,
-                        showProduct: false,
-                        showDetails: false,
-                    })
+                isVisible={visibleSection === "team"}
+                setIsVisible={(title) => {
+                    setVisibleSection(title.toLowerCase())
                 }}
             />
 
@@ -66,15 +56,9 @@ const Instamart = () => {
                 description={
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos temporibus nulla quis voluptates minima minus laudantium exercitationem officiis culpa soluta eveniet nihil commodi molestiae, deserunt ducimus beatae praesentium iusto cupiditate. Vitae voluptate voluptatum, temporibus laboriosam nisi, repudiandae inventore hic incidunt quam corrupti sint. Recusandae a veniam necessitatibus optio culpa omnis cupiditate. Pariatur facere soluta voluptas quasi porro atque temporibus!"
                 }
-                isVisible={sectionConfig.showCareers}
-                setIsVisible={() => {
-                    setSectionConfig({
-                        showAbout: false,
-                        showTeam: false,
-                        showCareers: true,
-                        showProduct: false,
-                        showDetails: false,
-                    })
+                isVisible={visibleSection === "careers"}
+                setIsVisible={(title) => {
+                    setVisibleSection(title.toLowerCase())
                 }}
             />
             <Section
@@ -82,32 +66,20 @@ const Instamart = () => {
                 description={
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos temporibus nulla quis voluptates minima minus laudantium exercitationem officiis culpa soluta eveniet nihil commodi molestiae, deserunt ducimus beatae praesentium iusto cupiditate. Vitae voluptate voluptatum, temporibus laboriosam nisi, repudiandae inventore hic incidunt quam corrupti sint. Recusandae a veniam necessitatibus optio culpa omnis cupiditate. Pariatur facere soluta voluptas quasi porro atque temporibus!"
                 }
-                isVisible={sectionConfig.showProduct}
-                setIsVisible={() => {
-                    setSectionConfig({
-                        showAbout: false,
-                        showTeam: false,
-                        showCareers: false,
-                        showProduct: true,
-                        showDetails: false,
-                    })
+                isVisible={visibleSection === "product"}
+                setIsVisible={(title) => {
+                    setVisibleSection(title.toLowerCase())
                 }}
             />
 
             <Section
-                title={"Details "}
+                title={"Details"}
                 description={
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos temporibus nulla quis voluptates minima minus laudantium exercitationem officiis culpa soluta eveniet nihil commodi molestiae, deserunt ducimus beatae praesentium iusto cupiditate. Vitae voluptate voluptatum, temporibus laboriosam nisi, repudiandae inventore hic incidunt quam corrupti sint. Recusandae a veniam necessitatibus optio culpa omnis cupiditate. Pariatur facere soluta voluptas quasi porro atque temporibus!"
                 }
-                isVisible={sectionConfig.showDetails}
-                setIsVisible={() => {
-                    setSectionConfig({
-                        showAbout: false,
-                        showTeam: false,
-                        showCareers: false,
-                        showProduct: false,
-                        showDetails: true,
-                    })
+                isVisible={visibleSection === "details"}
+                setIsVisible={(title) => {
+                    setVisibleSection(title.toLowerCase())
                 }}
             />
         </div>
