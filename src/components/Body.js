@@ -43,15 +43,15 @@ const Body = () => {
 
     return (allRestaurants.length === 0) ? < ShimmerUI /> : (
         <>
-            <div className="search-container">
+            <div className="search-container p-5 bg-pink-50 my-5">
                 <input type="text"
-                    className="search-input"
+                    className="search-input p-2 m-2 focus:outline-none focus:bg-green-50 "
                     placeholder="Search"
                     value={searchText}
                     onChange={(e) => { setSearchText(e.target.value) }}
                 />
                 <button
-                    className="search-btn"
+                    className="search-btn p-2 m-2 bg-purple-800 text-white rounded-md hover:bg-purple-950"
                     onClick={() => {
                         // update the restaurants
                         const data = filterData(searchText, allRestaurants);
@@ -59,7 +59,7 @@ const Body = () => {
                     }}
                 >Search</button>
             </div>
-            <div className="restaurant-list">
+            <div className="flex flex-wrap">
 
                 {/* <RestaurantCard {...restaurantList[0].data} /> */}
                 {/* using spread operator to pass multiple props */}
