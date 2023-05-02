@@ -67,10 +67,22 @@ const Body = () => {
                     value={user.name}
                     onChange={(e) => {
                         setUser({
+                            ...user,
                             name: e.target.value,
-                            email: "newemail@gmail.com"
                         })
-                    }} />
+                    }}
+                />
+                <input
+                    type="text"
+                    value={user.email}
+                    onChange={(e) => {
+                        setUser({
+                            ...user,
+                            email: e.target.value
+                        })
+                    }}
+                />
+
             </div>
             <div className="flex flex-wrap">
 

@@ -21,7 +21,7 @@
  * 
  **********/
 
-import React, { lazy, Suspense, useState } from "react"
+import React, { lazy, Suspense, useState, useContext } from "react"
 import ReactDOM from "react-dom/client"
 
 // default Import used for components exported as default
@@ -57,10 +57,12 @@ const Instamart = lazy(() => import("./components/Instamart"))
 
 
 const AppLayout = () => {
+    // const { user } = useContext(UserContext)
     const [user, setUser] = useState({
         name: "namaste react",
         email: "namaste.dev@support.com"
     })
+    // const [user1, setUser] = useState(user)
     return (
         <UserContext.Provider value={{ user: user, setUser: setUser }}>
             <HeaderComponent />
