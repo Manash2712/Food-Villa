@@ -1,6 +1,18 @@
+import UserContext from "../utils/UserContext"
+
 const Footer = () => {
     return (
-        <h4>Footer</h4>
+        <div>
+            <h4>Footer</h4>
+            <UserContext.Consumer>
+                {({ user }) => (
+                    <h4>
+                        {user.name}
+                    </h4>
+                )}
+            </UserContext.Consumer>
+        </div>
+
     )
 }
 

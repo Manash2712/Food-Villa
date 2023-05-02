@@ -21,7 +21,7 @@
  * 
  **********/
 
-import React, { lazy, Suspense } from "react"
+import React, { lazy, Suspense, useState } from "react"
 import ReactDOM from "react-dom/client"
 
 // default Import used for components exported as default
@@ -41,6 +41,7 @@ import Profile from "./components/ProfileClass";
 import ProfileFunctional from "./components/Profile"
 import ShimmerUI from "./components/ShimmerUI";
 // import Instamart from "./components/Instamart";
+// import UserContext from "./utils/UserContext";
 
 
 /* All are same!
@@ -56,6 +57,10 @@ const Instamart = lazy(() => import("./components/Instamart"))
 
 
 const AppLayout = () => {
+    const [user, setUser] = useState({
+        name: "namaste react",
+        email: "namaste.dev@support.com"
+    })
     return (
         <>
             <HeaderComponent />
