@@ -41,7 +41,7 @@ import Profile from "./components/ProfileClass";
 import ProfileFunctional from "./components/Profile"
 import ShimmerUI from "./components/ShimmerUI";
 // import Instamart from "./components/Instamart";
-// import UserContext from "./utils/UserContext";
+import UserContext from "./utils/UserContext";
 
 
 /* All are same!
@@ -62,12 +62,12 @@ const AppLayout = () => {
         email: "namaste.dev@support.com"
     })
     return (
-        <>
+        <UserContext.Provider value={{ user: user, setUser: setUser }}>
             <HeaderComponent />
             {/* {Outlet} */}
             <Outlet />
             <Footer />
-        </>
+        </UserContext.Provider>
     )
 }
 

@@ -6,9 +6,14 @@ const Footer = () => {
             <h4>Footer</h4>
             <UserContext.Consumer>
                 {({ user }) => (
-                    <h4>
-                        {user.name}
-                    </h4>
+                    <>
+                        <h4>
+                            {user.name}
+                        </h4>
+                        <h4>
+                            {user.email}
+                        </h4>
+                    </>
                 )}
             </UserContext.Consumer>
         </div>
