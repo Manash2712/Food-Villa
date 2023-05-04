@@ -44,6 +44,7 @@ import ShimmerUI from "./components/ShimmerUI";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux"
 import store from "./utils/store";
+import Cart from "./components/Cart";
 
 
 /* All are same!
@@ -120,6 +121,10 @@ const appRouter = createBrowserRouter([
                         <Instamart />
                     </Suspense>
                 ),
+            },
+            {
+                path: "/cart",
+                element: <Cart />
             }
         ]
     },

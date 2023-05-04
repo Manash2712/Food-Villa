@@ -28,7 +28,7 @@ const HeaderComponent = () => {
 
     const cartItems = useSelector(store => store.cart.items)
 
-    console.log(cartItems);
+    // console.log(cartItems);
 
     const toggleLogedIn = () => {
         isLoggedIn ? setIsLoggedIn(false) : setIsLoggedIn(true);
@@ -45,7 +45,7 @@ const HeaderComponent = () => {
                     <li className="px-2"><Link to="/about">About</Link></li>
                     <li className="px-2"><Link to="/contact">Contact</Link></li>
                     <li className="px-2"><Link to="/instamart">Instamart</Link></li>
-                    <li className="px-2">Cart - {cartItems.length} items</li>
+                    <li className="px-2"><Link to="/cart">Cart - {cartItems.length} items</Link></li>
                 </ul>
             </div>
             <h1 className="p-10">{isOnline ? '🟢' : '🔴'}</h1>
