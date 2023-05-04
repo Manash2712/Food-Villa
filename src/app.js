@@ -42,6 +42,8 @@ import ProfileFunctional from "./components/Profile"
 import ShimmerUI from "./components/ShimmerUI";
 // import Instamart from "./components/Instamart";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux"
+import store from "./utils/store";
 
 
 /* All are same!
@@ -64,12 +66,14 @@ const AppLayout = () => {
     })
     // const [user1, setUser] = useState(user)
     return (
-        <UserContext.Provider value={{ user: user, setUser: setUser }}>
-            <HeaderComponent />
-            {/* {Outlet} */}
-            <Outlet />
-            <Footer />
-        </UserContext.Provider>
+        <Provider store={store}>
+            <UserContext.Provider value={{ user: user, setUser: setUser }}>
+                <HeaderComponent />
+                {/* {Outlet} */}
+                <Outlet />
+                <Footer />
+            </UserContext.Provider>
+        </Provider>
     )
 }
 

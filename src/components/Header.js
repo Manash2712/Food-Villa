@@ -8,6 +8,7 @@ import Logo from "../assets/img/foodvilla.png"
 import { Link } from "react-router-dom"
 import useOnline from "../utils/useOnline"
 import UserContext from "../utils/UserContext"
+import { useSelector } from "react-redux"
 
 export const Title = () => {
     return (
@@ -25,6 +26,10 @@ const HeaderComponent = () => {
 
     const { user } = useContext(UserContext)
 
+    const cartItems = useSelector(store => store.cart.items)
+
+    console.log(cartItems);
+
     const toggleLogedIn = () => {
         isLoggedIn ? setIsLoggedIn(false) : setIsLoggedIn(true);
     }
@@ -39,8 +44,8 @@ const HeaderComponent = () => {
                     <li className="px-2 "><Link to="/">Home</Link></li>
                     <li className="px-2"><Link to="/about">About</Link></li>
                     <li className="px-2"><Link to="/contact">Contact</Link></li>
-                    <li className="px-2">Cart</li>
                     <li className="px-2"><Link to="/instamart">Instamart</Link></li>
+                    <li className="px-2">Cart - {cartItems.length} items</li>
                 </ul>
             </div>
             <h1 className="p-10">{isOnline ? '🟢' : '🔴'}</h1>
