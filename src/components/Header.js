@@ -13,7 +13,7 @@ import { useSelector } from "react-redux"
 export const Title = () => {
     return (
         <a href="/">
-            <img className="logo h-28 p-2" src={Logo} alt="logo" />
+            <img data-testid="logo" className="logo h-28 p-2" src={Logo} alt="logo" />
         </a>
     )
 }
