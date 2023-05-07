@@ -70,10 +70,18 @@ const RestaurantMenu = () => {
 
 
                 <h1>Menu</h1>
-                <ul>
+                <ul data-testid="menu">
                     {restaurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
                         .filter(items => items?.card?.card?.hasOwnProperty('itemCards'))
-                        .map((item) => item?.card?.card?.itemCards.map((n) => <li key={n?.card?.info?.id}>{n.card.info.name} - <button className="p-1 bg-green-50" onClick={() => handleAddItem(n.card.info)}>Add</button></li>))}
+                        .map((item) => item?.card?.card?.itemCards.map((n) => <li key={n?.card?.info?.id}>{n.card.info.name} - {" "}
+                            <button
+                                data-testid="addBtn"
+                                className="p-1 bg-green-50"
+                                onClick={() => handleAddItem(n.card.info)}
+                            >
+                                Add
+                            </button>
+                        </li>))}
                 </ul>
             </div>
         </div>
