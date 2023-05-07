@@ -1,4 +1,1947 @@
 export const RESTAURANT_DATA = {
     "statusCode": 0,
-    "data": { "cacheExpiryTime": 320, "pages": 1, "pageIndex": 0, "scrubber": 0, "filters": [{ "type": "FilterWidget", "title": "Cuisines", "key": "CUISINES", "configType": "checkbox", "visible": 1, "options": [{ "option": "Afghani", "selected": 0, "visible": 1 }, { "option": "American", "selected": 0, "visible": 1 }, { "option": "Arabian", "selected": 0, "visible": 1 }, { "option": "Asian", "selected": 0, "visible": 1 }, { "option": "Awadhi", "selected": 0, "visible": 1 }, { "option": "Bakery", "selected": 0, "visible": 1 }, { "option": "Barbecue", "selected": 0, "visible": 1 }, { "option": "Bengali", "selected": 0, "visible": 1 }, { "option": "Beverages", "selected": 0, "visible": 1 }, { "option": "Biryani", "selected": 0, "visible": 1 }, { "option": "Buffalo meat", "selected": 0, "visible": 1 }, { "option": "Burgers", "selected": 0, "visible": 1 }, { "option": "Cafe", "selected": 0, "visible": 1 }, { "option": "Chaat", "selected": 0, "visible": 1 }, { "option": "Chettinad", "selected": 0, "visible": 1 }, { "option": "Chinese", "selected": 0, "visible": 1 }, { "option": "Combo", "selected": 0, "visible": 1 }, { "option": "Continental", "selected": 0, "visible": 1 }, { "option": "Desserts", "selected": 0, "visible": 1 }, { "option": "European", "selected": 0, "visible": 1 }, { "option": "Fast Food", "selected": 0, "visible": 1 }, { "option": "Goan", "selected": 0, "visible": 1 }, { "option": "Grill", "selected": 0, "visible": 1 }, { "option": "Gujarati", "selected": 0, "visible": 1 }, { "option": "Healthy Food", "selected": 0, "visible": 1 }, { "option": "Home Food", "selected": 0, "visible": 1 }, { "option": "Hyderabadi", "selected": 0, "visible": 1 }, { "option": "Ice Cream", "selected": 0, "visible": 1 }, { "option": "Ice Cream Cakes", "selected": 0, "visible": 1 }, { "option": "Indian", "selected": 0, "visible": 1 }, { "option": "Italian", "selected": 0, "visible": 1 }, { "option": "Italian-American", "selected": 0, "visible": 1 }, { "option": "Jain", "selected": 0, "visible": 1 }, { "option": "Juices", "selected": 0, "visible": 1 }, { "option": "Kebabs", "selected": 0, "visible": 1 }, { "option": "Kerala", "selected": 0, "visible": 1 }, { "option": "Keto", "selected": 0, "visible": 1 }, { "option": "Lebanese", "selected": 0, "visible": 1 }, { "option": "Lucknowi", "selected": 0, "visible": 1 }, { "option": "Maharashtrian", "selected": 0, "visible": 1 }, { "option": "Malwani", "selected": 0, "visible": 1 }, { "option": "Mexican", "selected": 0, "visible": 1 }, { "option": "Mughlai", "selected": 0, "visible": 1 }, { "option": "Nepalese", "selected": 0, "visible": 1 }, { "option": "North Indian", "selected": 0, "visible": 1 }, { "option": "Oriental", "selected": 0, "visible": 1 }, { "option": "Oriya", "selected": 0, "visible": 1 }, { "option": "Paan", "selected": 0, "visible": 1 }, { "option": "Pan-Asian", "selected": 0, "visible": 1 }, { "option": "Pastas", "selected": 0, "visible": 1 }, { "option": "Pizzas", "selected": 0, "visible": 1 }, { "option": "Punjabi", "selected": 0, "visible": 1 }, { "option": "Rajasthani", "selected": 0, "visible": 1 }, { "option": "Salads", "selected": 0, "visible": 1 }, { "option": "Seafood", "selected": 0, "visible": 1 }, { "option": "Snacks", "selected": 0, "visible": 1 }, { "option": "South Indian", "selected": 0, "visible": 1 }, { "option": "Street Food", "selected": 0, "visible": 1 }, { "option": "Sushi", "selected": 0, "visible": 1 }, { "option": "Sweets", "selected": 0, "visible": 1 }, { "option": "Tandoor", "selected": 0, "visible": 1 }, { "option": "Tex-Mex", "selected": 0, "visible": 1 }, { "option": "Thai", "selected": 0, "visible": 1 }, { "option": "Thalis", "selected": 0, "visible": 1 }, { "option": "Tibetan", "selected": 0, "visible": 1 }, { "option": "Waffle", "selected": 0, "visible": 1 }], "detail": "", "heading": "Cuisines", "applicable": 1, "searchable": 1 }, { "type": "FilterWidget", "title": "Show Restaurants With", "key": "SHOW_RESTAURANTS_WITH", "configType": "checkbox", "visible": 1, "options": [{ "option": "Offers", "selected": 0, "visible": 1 }, { "option": "Pure Veg", "selected": 0, "visible": 1 }], "detail": "", "heading": "Offers & More", "applicable": 1, "searchable": 0 }], "sorts": [{ "type": "SortWidget", "key": "RELEVANCE", "title": "Relevance", "selected": 1, "visible": 1, "defaultSelection": true }, { "type": "SortWidget", "key": "DELIVERY_TIME", "title": "Delivery Time", "selected": 0, "visible": 1, "defaultSelection": false }, { "type": "SortWidget", "key": "RATING", "title": "Rating", "selected": 0, "visible": 1, "defaultSelection": false }, { "type": "SortWidget", "key": "COST_FOR_TWO", "title": "Cost: Low to High", "selected": 0, "visible": 1, "defaultSelection": false }, { "type": "SortWidget", "key": "COST_FOR_TWO_H2L", "title": "Cost: High to Low", "selected": 0, "visible": 1, "defaultSelection": false }], "configs": { "ribbons": { "PREORDER": { "type": "PREORDER", "text": "Preorder", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#d53d4c", "bottomBackgroundColor": "#af2330", "priority": 3 }, "EXCLUSIVE": { "type": "EXCLUSIVE", "text": "Exclusive", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#fa4a5b", "bottomBackgroundColor": "#d12a3b", "priority": 2 }, "NEW": { "type": "NEW", "text": "Newly Added", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#d53d4c", "bottomBackgroundColor": "#af2330", "priority": 4 }, "REPEAT": { "type": "REPEAT", "text": "Repeat", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#D53D4C", "bottomBackgroundColor": "#B02331", "priority": 6 }, "CLOUD": { "type": "CLOUD", "text": "Daily Menus", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#fa4a5b", "bottomBackgroundColor": "#d12a3b", "priority": 5 }, "PREMIUM": { "type": "PREMIUM", "text": "Premium", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#8a584b", "bottomBackgroundColor": "#583229", "priority": 7 }, "PROMOTED": { "type": "PROMOTED", "text": "Promoted", "textColor": "#ffffff", "imageId": "sfefefefeegeg", "topBackgroundColor": "#3a3c41", "bottomBackgroundColor": "#1e2023", "priority": 1 } }, "croutons": { "RAIN": { "type": "Crouton", "bgColor": "#282C3F", "icon": "surge_listing_piuzrv", "textColor": "#ffffff", "title": "Bad Weather", "message": "${amount} extra levied on some restaurants" }, "SERVICEABLE_WITH_BANNER_RAIN": { "type": "Crouton", "bgColor": "#282C3F", "icon": "rain_crouton_4x", "textColor": "#ffffff", "title": "Bad Weather", "message": "Few restaurants unserviceable due to rains" } } }, "cards": [{ "cardType": "carousel", "layoutAlignmentType": "VERTICAL", "data": { "type": "carousel", "subtype": "topCarousel", "data": { "cards": [{ "type": "carouselElement", "subtype": "image", "data": { "bannerId": 635529, "creativeId": "rng/md/carousel/production/pneknawbadtvceqzwiep", "type": "restaurantCollectionV2", "link": "49301", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "thirdPartyVendor": "", "thirdPartyAddress": false } }, { "type": "carouselElement", "subtype": "image", "data": { "bannerId": 619141, "creativeId": "rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t", "type": "restaurantCollectionV2", "link": "56413", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "thirdPartyVendor": "", "thirdPartyAddress": false } }, { "type": "carouselElement", "subtype": "image", "data": { "bannerId": 304827, "creativeId": "rng/md/carousel/production/awurei8ypqkafoqay9ym", "type": "restaurantCollectionV2", "link": "47670", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "thirdPartyVendor": "", "thirdPartyAddress": false } }, { "type": "carouselElement", "subtype": "image", "data": { "bannerId": 607195, "creativeId": "rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3", "type": "restaurantCollectionV2", "link": "56421", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "thirdPartyVendor": "", "thirdPartyAddress": false } }] } }, "parentWidget": false }, { "cardType": "carousel", "layoutAlignmentType": "VERTICAL", "data": { "type": "carousel", "subtype": "openFilter", "data": { "cards": [{ "type": "carouselElement", "subtype": "image", "data": { "bannerId": 181684, "creativeId": "bkhjfipzydkoqncrxpyi", "type": "restaurantCollectionV2", "link": "11718", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "title": "Offers Near You", "subtitle": "0 OPTIONS", "restaurants": [], "totalCount": 0, "dwebOpenFilterTitle": "Offers Near You", "dwebOpenFilterBgColor": "#FF0000", "dwebOpenFilterSelectIcon": "eyperwsfhaoa5vktjtu4", "dwebOpenFilterDeselectIcon": "urw8usdf4mk9aywd59gq" } }, { "type": "carouselElement", "subtype": "image", "data": { "bannerId": 273242, "creativeId": "rng/md/carousel/production/vquntqrzvkb08pe59cec", "type": "restaurantCollectionV2", "link": "46147", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "title": "Top Picks", "subtitle": "0 OPTIONS", "restaurants": [], "totalCount": 0, "dwebOpenFilterTitle": "Top Picks", "dwebOpenFilterBgColor": "#FF0000", "dwebOpenFilterSelectIcon": "rng/md/carousel/production/vt13uzhjrg5r49kh9oru", "dwebOpenFilterDeselectIcon": "rng/md/carousel/production/ser2sttildk9yt7t2s91" } }, { "type": "carouselElement", "subtype": "image", "data": { "bannerId": 181674, "creativeId": "azawtyrnrxqibiivimxe", "type": "restaurantCollectionV2", "link": "49083", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "title": "Premium", "subtitle": "0 OPTIONS", "restaurants": [], "totalCount": 0, "dwebOpenFilterTitle": "Premium", "dwebOpenFilterBgColor": "#FF0000", "dwebOpenFilterSelectIcon": "marketing-dashboard/carousel/bslg595hrlkv5aia4ihy", "dwebOpenFilterDeselectIcon": "marketing-dashboard/carousel/ftnsdmo6fotidtzobbm2" } }, { "type": "carouselElement", "subtype": "image", "data": { "bannerId": 181680, "creativeId": "a3jqjjod5taken7dh1bs", "type": "restaurantCollectionV2", "link": "11721", "cityId": 0, "restaurantUuid": "", "restaurantParentId": "0", "title": "Veg Only", "subtitle": "0 OPTIONS", "restaurants": [], "totalCount": 0, "dwebOpenFilterTitle": "Vegetarian Options", "dwebOpenFilterBgColor": "#FF0000", "dwebOpenFilterSelectIcon": "qtjc8dzfexg72lug37a0", "dwebOpenFilterDeselectIcon": "bm8bziikwyvwqsml1clm" } }] } }, "parentWidget": false }, { "cardType": "seeAllRestaurants", "layoutAlignmentType": "VERTICAL", "data": { "type": "seeAllRestaurants", "data": { "title": "SEE ALL", "totalOpenRestaurants": 1157, "cards": [{ "type": "restaurant", "data": { "type": "F", "id": "681850", "name": "Burgerino", "uuid": "986a7f3a-89ad-4363-bd5d-98592444978c", "city": "6", "area": "Hinjewadi", "totalRatingsString": "20+ ratings", "cloudinaryImageId": "512de94363c22a9db4d8beb84268716f", "cuisines": ["Burgers"], "tags": [], "costForTwo": 15000, "costForTwoString": "₹150 FOR TWO", "deliveryTime": 38, "minDeliveryTime": 38, "maxDeliveryTime": 38, "slaString": "38 MINS", "lastMileTravel": 5, "slugs": { "restaurant": "burgeriano-hinjewadi-phase-3-hinjewadi-phase-3", "city": "pune" }, "cityState": "6", "address": "SHOP.NO.9,VJ HAPPINESS STREET,VILAS JAVDEKAR ECO SHELTERS PVT.LTD.,286/4/1/ C,MAN,PUNE-411057, Mulshi, Pune, Maharashtra-411057", "locality": "Vj Happiness Street", "parentId": 394779, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "FLAT150 off", "shortDescriptionList": [{ "meta": "FLAT150 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "FLAT150 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "₹150 OFF", "shortDescriptionList": [{ "meta": "Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "FLAT150 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "ribbon": [{ "type": "PROMOTED" }], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 4900, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 4900, "message": "", "title": "Delivery Charge", "amount": "4900", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "cid=6614905~p=1~eid=00000187-f4b5-c8ff-3078-42bd00460157", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "5 kms", "hasSurge": false, "sla": { "restaurantId": "681850", "deliveryTime": 38, "minDeliveryTime": 38, "maxDeliveryTime": 38, "lastMileTravel": 5, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": true, "avgRating": "3.6", "totalRatings": 20, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "626230", "name": "Sudamache Pohe", "uuid": "c2a39fac-0179-4314-84b4-8f34dc868b71", "city": "6", "area": "Hinjawadi", "totalRatingsString": "50+ ratings", "cloudinaryImageId": "npko4czaetvihkj5dwll", "cuisines": ["Snacks", "Beverages"], "tags": [], "costForTwo": 10000, "costForTwoString": "₹100 FOR TWO", "deliveryTime": 22, "minDeliveryTime": 22, "maxDeliveryTime": 22, "slaString": "22 MINS", "lastMileTravel": 0.20000000298023224, "slugs": { "restaurant": "sudamache-pohe-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "AKSHAY PLAZA SHOP NO 1, GROUND FLOOR OPP TO SBI MANN ROAD, HINJEWADI TALUKA MULSHI, Mulshi, Pune, Maharashtra-411057", "locality": "Hinjewadi Road", "parentId": 295167, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.2 kms", "hasSurge": false, "sla": { "restaurantId": "626230", "deliveryTime": 22, "minDeliveryTime": 22, "maxDeliveryTime": 22, "lastMileTravel": 0.20000000298023224, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.0", "totalRatings": 50, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "677642", "name": "Tanjore Coffee House", "uuid": "4e945356-b11c-48f2-bf70-557a0cc82f11", "city": "6", "area": "Hinjewadi", "totalRatingsString": "100+ ratings", "cloudinaryImageId": "bf169e25ae326ea490eb1b6fbcfaeac4", "cuisines": ["South Indian", "Indian", "Cafe", "Beverages"], "tags": [], "costForTwo": 20000, "costForTwoString": "₹200 FOR TWO", "deliveryTime": 18, "minDeliveryTime": 18, "maxDeliveryTime": 18, "slaString": "18 MINS", "lastMileTravel": 0.20000000298023224, "slugs": { "restaurant": "tanjore-coffee-house-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "shivaji chowk, Hinjewadi Phase 1 Rd, opp. SBI, below Lux Snooker club, Phase 1, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057, India", "locality": "Shivaji chowk", "parentId": 405072, "unserviceable": false, "veg": true, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "60% off", "shortDescriptionList": [{ "meta": "60% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "60% off up to ₹120 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "60% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "60% off up to ₹120 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.2 kms", "hasSurge": false, "sla": { "restaurantId": "677642", "deliveryTime": 18, "minDeliveryTime": 18, "maxDeliveryTime": 18, "lastMileTravel": 0.20000000298023224, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.1", "totalRatings": 100, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "655824", "name": "Subway", "uuid": "ebc06f82-5048-4418-a175-dc81f794e926", "city": "6", "area": "Hinjewadi", "totalRatingsString": "100+ ratings", "cloudinaryImageId": "0bf19a82b109b40c2f5c56d00f071a33", "cuisines": ["Salads", "Snacks", "Desserts", "Beverages"], "tags": [], "costForTwo": 35000, "costForTwoString": "₹350 FOR TWO", "deliveryTime": 27, "minDeliveryTime": 27, "maxDeliveryTime": 27, "slaString": "27 MINS", "lastMileTravel": 5, "slugs": { "restaurant": "subway-vj-happiness-street-hinjewadi", "city": "pune" }, "cityState": "6", "address": "VJ Happiness Street Shop no 6 Hinjawadi Pune Maharashtra 411057", "locality": "VJ Happiness Street", "parentId": 2, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "20% off", "shortDescriptionList": [{ "meta": "20% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "20% off up to ₹50 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "20% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "20% off up to ₹50 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "ribbon": [{ "type": "PROMOTED" }], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 4900, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 4900, "message": "", "title": "Delivery Charge", "amount": "4900", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "cid=6680521~p=4~eid=00000187-f4b5-c8ff-3078-42be00460465", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "5 kms", "hasSurge": false, "sla": { "restaurantId": "655824", "deliveryTime": 27, "minDeliveryTime": 27, "maxDeliveryTime": 27, "lastMileTravel": 5, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": true, "avgRating": "3.9", "totalRatings": 100, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "634408", "name": "NAADBRAMHA IDLI", "uuid": "7b581ab5-b572-44b8-9aea-b9ff66088716", "city": "6", "area": "Hinjawadi", "totalRatingsString": "100+ ratings", "cloudinaryImageId": "ks7vh0vnozdv4amlpnir", "cuisines": ["South Indian", "Beverages"], "tags": [], "costForTwo": 10000, "costForTwoString": "₹100 FOR TWO", "deliveryTime": 15, "minDeliveryTime": 15, "maxDeliveryTime": 15, "slaString": "15 MINS", "lastMileTravel": 0.699999988079071, "slugs": { "restaurant": "naadbramha-idli-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "SNO-148, HNO-119 , NEAR GRAMPANCHAYAT ,  HINJEWADI GAON ,HINJEWADI , TALUKA - MULSHI, Mulshi, Pune, Maharashtra-411027", "locality": "Dange Chowk Road", "parentId": 251339, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "FLAT100 off", "shortDescriptionList": [{ "meta": "FLAT100 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "FLAT100 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "₹100 OFF", "shortDescriptionList": [{ "meta": "Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "FLAT100 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.6 kms", "hasSurge": false, "sla": { "restaurantId": "634408", "deliveryTime": 15, "minDeliveryTime": 15, "maxDeliveryTime": 15, "lastMileTravel": 0.699999988079071, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.6", "totalRatings": 100, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "245348", "name": "Oye Kiddan", "uuid": "37dbf356-723d-48d2-a154-b700ca0c96d8", "city": "6", "area": "Hinjawadi", "totalRatingsString": "10000+ ratings", "cloudinaryImageId": "poymismten2l3pbit1ui", "cuisines": ["North Indian", "Punjabi", "Thalis"], "tags": [], "costForTwo": 25000, "costForTwoString": "₹250 FOR TWO", "deliveryTime": 22, "minDeliveryTime": 22, "maxDeliveryTime": 22, "slaString": "22 MINS", "lastMileTravel": 0.6000000238418579, "slugs": { "restaurant": "oye-kiddan-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "s no 40, jambulkar nagar behind shell petrol pump , hinjewadi, Pune , Maharashtra", "locality": "Jambulkar Nagar", "parentId": 690, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "50% off", "shortDescriptionList": [{ "meta": "50% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "50% off up to ₹100 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "50% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "50% off up to ₹100 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.6 kms", "hasSurge": false, "sla": { "restaurantId": "245348", "deliveryTime": 22, "minDeliveryTime": 22, "maxDeliveryTime": 22, "lastMileTravel": 0.6000000238418579, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.0", "totalRatings": 10000, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "703453", "name": "Sweetnest", "uuid": "0493b5db-8155-4e34-80f5-071c5f637193", "city": "6", "area": "Wakad", "totalRatingsString": "Too Few Ratings", "cloudinaryImageId": "3a8838c410b8192d4c40d824e7e9d05a", "cuisines": ["Bakery", "Desserts"], "tags": [], "costForTwo": 40000, "costForTwoString": "₹400 FOR TWO", "deliveryTime": 36, "minDeliveryTime": 36, "maxDeliveryTime": 36, "slaString": "36 MINS", "lastMileTravel": 3.5, "slugs": { "restaurant": "sweetnest-wakad-wakad", "city": "pune" }, "cityState": "6", "address": "Shop no. 11, Horizon at, Choudhary Park, Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057, India", "locality": "Shankar Kalat Nagar", "parentId": 420062, "unserviceable": false, "veg": true, "select": false, "favorite": false, "tradeCampaignHeaders": [], "ribbon": [{ "type": "PROMOTED" }], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 4100, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 4100, "message": "", "title": "Delivery Charge", "amount": "4100", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "cid=6702859~p=7~eid=00000187-f4b5-c8ff-3078-42bf00460755", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "3.5 kms", "hasSurge": false, "sla": { "restaurantId": "703453", "deliveryTime": 36, "minDeliveryTime": 36, "maxDeliveryTime": 36, "lastMileTravel": 3.5, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": true, "avgRating": "--", "totalRatings": 0, "new": true }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "288897", "name": "Wholesome meals", "uuid": "4fccc69c-10e3-4737-912d-712b2eb31c2c", "city": "6", "area": "Hinjawadi", "totalRatingsString": "500+ ratings", "cloudinaryImageId": "hazuwylgmdytqq0gkj0h", "cuisines": ["North Indian", "Punjabi", "Combo", "Beverages", "Desserts"], "tags": [], "costForTwo": 25000, "costForTwoString": "₹250 FOR TWO", "deliveryTime": 26, "minDeliveryTime": 26, "maxDeliveryTime": 26, "slaString": "26 MINS", "lastMileTravel": 0.6000000238418579, "slugs": { "restaurant": "wholesome-meals-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "s no 40, jambulkar nagar behind shell petrol pump , hinjewadi, Pune , Maharashtra", "locality": "Jambulkar Nagar", "parentId": 11039, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "40% off", "shortDescriptionList": [{ "meta": "40% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "40% off up to ₹80 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "40% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "40% off up to ₹80 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.6 kms", "hasSurge": false, "sla": { "restaurantId": "288897", "deliveryTime": 26, "minDeliveryTime": 26, "maxDeliveryTime": 26, "lastMileTravel": 0.6000000238418579, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "3.8", "totalRatings": 500, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "89750", "name": "CakeZone", "uuid": "9a1710c5-93a8-4730-ba5f-70e84c248962", "city": "6", "area": "Hinjawadi", "totalRatingsString": "10000+ ratings", "cloudinaryImageId": "4bfb7107c4c7be62c24c5af6b4b9832d", "cuisines": ["Bakery", "Desserts", "Sweets", "Ice Cream"], "tags": [], "costForTwo": 20000, "costForTwoString": "₹200 FOR TWO", "deliveryTime": 25, "minDeliveryTime": 25, "maxDeliveryTime": 25, "slaString": "25 MINS", "lastMileTravel": 0.6000000238418579, "slugs": { "restaurant": "cakezone-wakad-wakad", "city": "pune" }, "cityState": "6", "address": "FIRST FLOOR S NO 39/1 HINJEWADI WAKAD  ROAD NR SHELL PETROL PUMP OPP YES BANK  HINJEWADI , Mulshi, Pune,  Maharashtra-411057", "locality": "Wakad Road", "parentId": 7003, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "FLAT150 off", "shortDescriptionList": [{ "meta": "FLAT150 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "FLAT150 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "₹150 OFF", "shortDescriptionList": [{ "meta": "Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "FLAT150 off | Use FLATDEAL", "discountType": "Flat", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.6 kms", "hasSurge": false, "sla": { "restaurantId": "89750", "deliveryTime": 25, "minDeliveryTime": 25, "maxDeliveryTime": 25, "lastMileTravel": 0.6000000238418579, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.2", "totalRatings": 10000, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "65297", "name": "Hotel Malhar", "uuid": "1fe9fe08-68d7-486f-911d-84468d837725", "city": "6", "area": "Hinjawadi", "totalRatingsString": "500+ ratings", "cloudinaryImageId": "xemlj7wfxnafqemuhsjj", "cuisines": ["Maharashtrian"], "tags": [], "costForTwo": 40000, "costForTwoString": "₹400 FOR TWO", "deliveryTime": 26, "minDeliveryTime": 26, "maxDeliveryTime": 26, "slaString": "26 MINS", "lastMileTravel": 1.399999976158142, "slugs": { "restaurant": "hotel-malhar-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "Hinjawadi dangechowk road opp santatukaram mangal karyalay-pin 411057", "locality": "Dange Chowk Road", "parentId": 100090, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "20% off", "shortDescriptionList": [{ "meta": "20% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "20% off up to ₹50 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "20% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "20% off up to ₹50 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "ribbon": [{ "type": "PROMOTED" }], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "cid=6600957~p=10~eid=00000187-f4b5-c8ff-3078-42c000460a3f", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "1.3 kms", "hasSurge": false, "sla": { "restaurantId": "65297", "deliveryTime": 26, "minDeliveryTime": 26, "maxDeliveryTime": 26, "lastMileTravel": 1.399999976158142, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": true, "avgRating": "4.0", "totalRatings": 500, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "441447", "name": "Burger King", "uuid": "a55ae3be-c0fc-47e4-b744-87b7b9fe4bda", "city": "6", "area": "Hinjewadi", "totalRatingsString": "5000+ ratings", "cloudinaryImageId": "28fb13049b4e55297bb3f703cde63c35", "cuisines": ["Burgers", "American"], "tags": [], "costForTwo": 35000, "costForTwoString": "₹350 FOR TWO", "deliveryTime": 23, "minDeliveryTime": 23, "maxDeliveryTime": 23, "slaString": "23 MINS", "lastMileTravel": 1.2999999523162842, "slugs": { "restaurant": "burger-king-hinjewadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "BURGER KING INDIA LIMITED , UNIT NO -18, SURATWALA, MARK PLAZZO, S. NO -27/1,27/5(P),28/B/1,2,3,4, HINJEWADI, PUNE 411057, HADASPAR, PUNE PMC&Rural, Maharashtra -411057", "locality": "Suratwala", "parentId": 166, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "60% off", "shortDescriptionList": [{ "meta": "60% off | Use STEALDEAL", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "60% off up to ₹120 | Use code STEALDEAL", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "60% OFF", "shortDescriptionList": [{ "meta": "Use STEALDEAL", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "60% off up to ₹120 | Use code STEALDEAL", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "1.2 kms", "hasSurge": false, "sla": { "restaurantId": "441447", "deliveryTime": 23, "minDeliveryTime": 23, "maxDeliveryTime": 23, "lastMileTravel": 1.2999999523162842, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.0", "totalRatings": 5000, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "71607", "name": "Hotel Vijay", "uuid": "28a40a81-40e9-48e0-80d1-78feb5b27fc6", "city": "6", "area": "Hinjawadi", "totalRatingsString": "5000+ ratings", "cloudinaryImageId": "iujdgczww7oxjjuv0jxz", "cuisines": ["South Indian"], "tags": [], "costForTwo": 20000, "costForTwoString": "₹200 FOR TWO", "deliveryTime": 28, "minDeliveryTime": 28, "maxDeliveryTime": 28, "slaString": "28 MINS", "lastMileTravel": 2, "slugs": { "restaurant": "hotel-vijay-hinjawadi-hinjewadi", "city": "pune" }, "cityState": "6", "address": "Shop 1&2, Shivaji Chowk, Khanekar Complex, Near Allahabad Bank, Hinjawadi Village, Hinjawadi, Pune", "locality": "Shivaji Chowk", "parentId": 103305, "unserviceable": false, "veg": false, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "10% off", "shortDescriptionList": [{ "meta": "10% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "10% off up to ₹40 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "10% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "10% off up to ₹40 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "2 kms", "hasSurge": false, "sla": { "restaurantId": "71607", "deliveryTime": 28, "minDeliveryTime": 28, "maxDeliveryTime": 28, "lastMileTravel": 2, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.3", "totalRatings": 5000, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "542199", "name": "Kwality Walls Frozen Dessert and Ice Cream Shop", "uuid": "f0006bd8-82fd-400f-97e2-cbef215d64b1", "city": "6", "area": "Hinjawadi", "totalRatingsString": "100+ ratings", "cloudinaryImageId": "iyywddrlrw8pdcpv0xyv", "cuisines": ["Desserts", "Ice Cream", "Ice Cream Cakes"], "tags": [], "costForTwo": 20000, "costForTwoString": "₹200 FOR TWO", "deliveryTime": 25, "minDeliveryTime": 25, "maxDeliveryTime": 25, "slaString": "25 MINS", "lastMileTravel": 3, "slugs": { "restaurant": "kwality-walls-frozen-dessert-and-ice-cream-shop-hinjewadi-hinjewadi-11", "city": "pune" }, "cityState": "6", "address": "MERCADO: SHOP NO.1 AND 5,6,7,8,9,10,11 PACIFIC SPORTS COMPOUND, SURVEY NO.180/1/A, HINJEWADI CITY, PUNE PMC & RURAL, MAHARASHTRA-411057 (HUL-I10A286P2263)", "locality": "1st Phase", "parentId": 582, "unserviceable": false, "veg": true, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "50% off", "shortDescriptionList": [{ "meta": "50% off | Use SWIGGYIT", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "50% off up to ₹100 | Use code SWIGGYIT", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "50% OFF", "shortDescriptionList": [{ "meta": "Use SWIGGYIT", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "50% off up to ₹100 | Use code SWIGGYIT", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "ribbon": [{ "type": "PROMOTED" }], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 4100, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 4100, "message": "", "title": "Delivery Charge", "amount": "4100", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "cid=6685779~p=13~eid=00000187-f4b5-c8ff-3078-42c100460d02", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "3 kms", "hasSurge": false, "sla": { "restaurantId": "542199", "deliveryTime": 25, "minDeliveryTime": 25, "maxDeliveryTime": 25, "lastMileTravel": 3, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": true, "avgRating": "4.3", "totalRatings": 100, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "174509", "name": "Tamilnadu Restaurant", "uuid": "2b438fc3-5d95-41cf-9dab-f4487427f667", "city": "6", "area": "Hinjawadi", "totalRatingsString": "5000+ ratings", "cloudinaryImageId": "k42pq76fdf5fo1hk2hjh", "cuisines": ["South Indian", "Snacks"], "tags": [], "costForTwo": 20000, "costForTwoString": "₹200 FOR TWO", "deliveryTime": 20, "minDeliveryTime": 20, "maxDeliveryTime": 20, "slaString": "20 MINS", "lastMileTravel": 1.7999999523162842, "slugs": { "restaurant": "tamilnadu-special-dosa-hinjewadi", "city": "pune" }, "cityState": "6", "address": "shop no 18 jayaram market , behind persistent company hinjewadi phase 1", "locality": "Jayaram Market", "parentId": 200431, "unserviceable": false, "veg": true, "select": false, "favorite": false, "tradeCampaignHeaders": [], "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "1.7 kms", "hasSurge": false, "sla": { "restaurantId": "174509", "deliveryTime": 20, "minDeliveryTime": 20, "maxDeliveryTime": 20, "lastMileTravel": 1.7999999523162842, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.3", "totalRatings": 5000, "new": false }, "subtype": "basic" }, { "type": "restaurant", "data": { "type": "F", "id": "442847", "name": "The Dessert Heaven - Pure Veg", "uuid": "a7ed72bc-2c67-4af4-a48d-7610789feb2d", "city": "6", "area": "Hinjewadi", "totalRatingsString": "100+ ratings", "cloudinaryImageId": "677f5783ea5fcff68f890621f7fde2c2", "cuisines": ["Bakery", "Desserts", "Sweets", "Ice Cream"], "tags": [], "costForTwo": 20000, "costForTwoString": "₹200 FOR TWO", "deliveryTime": 27, "minDeliveryTime": 27, "maxDeliveryTime": 27, "slaString": "27 MINS", "lastMileTravel": 0.6000000238418579, "slugs": { "restaurant": "the-dessert-heaven-wakad-wakad", "city": "pune" }, "cityState": "6", "address": "FIRST FLOOR S NO 39/1 HINJEWADI WAKAD  ROAD NR SHELL PETROL PUMP OPP YES BANK  HINJEWADI , Mulshi, Pune,  Maharashtra-411057", "locality": "Hinjewadi", "parentId": 350292, "unserviceable": false, "veg": true, "select": false, "favorite": false, "tradeCampaignHeaders": [], "aggregatedDiscountInfo": { "header": "50% off", "shortDescriptionList": [{ "meta": "50% off | Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "50% off up to ₹100 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "aggregatedDiscountInfoV2": { "header": "50% OFF", "shortDescriptionList": [{ "meta": "Use TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "descriptionList": [{ "meta": "50% off up to ₹100 | Use code TRYNEW", "discountType": "Percentage", "operationType": "RESTAURANT" }], "subHeader": "", "headerType": 0, "superFreedel": "" }, "chain": [], "feeDetails": { "fees": [{ "name": "distance", "fee": 3300, "message": "" }, { "name": "time", "fee": 0, "message": "" }, { "name": "special", "fee": 0, "message": "" }], "totalFees": 3300, "message": "", "title": "Delivery Charge", "amount": "3300", "icon": "" }, "availability": { "opened": true, "nextOpenMessage": "", "nextCloseMessage": "" }, "longDistanceEnabled": 0, "rainMode": "NONE", "thirdPartyAddress": false, "thirdPartyVendor": "", "adTrackingID": "", "badges": { "imageBased": [], "textBased": [], "textExtendedBadges": [] }, "lastMileTravelString": "0.6 kms", "hasSurge": false, "sla": { "restaurantId": "442847", "deliveryTime": 27, "minDeliveryTime": 27, "maxDeliveryTime": 27, "lastMileTravel": 0.6000000238418579, "lastMileDistance": 0, "serviceability": "SERVICEABLE", "rainMode": "NONE", "longDistance": "NOT_LONG_DISTANCE", "preferentialService": false, "iconType": "EMPTY" }, "promoted": false, "avgRating": "4.2", "totalRatings": 100, "new": false }, "subtype": "basic" }], "totalRestaurants": 1157 }, "subtype": "personalized" }, "parentWidget": false }], "nextPageFetch": 0 }, "tid": "bb4bf6b9-c2f2-442a-af7b-1d464534afbe", "sid": "6wz3b7d5-88d6-43e1-8238-2907e9c0d5fa", "deviceId": "01db8c06-08d5-ce47-d4ff-e7c7dd452732", "csrfToken": "t6FGelYH5iMz-QL7ld_tJZP35Zyp63c0lK6hSfIU"
+    "data": {
+        "cacheExpiryTime": 320,
+        "pages": 1,
+        "pageIndex": 0,
+        "scrubber": 0,
+        "filters": [
+            {
+                "type": "FilterWidget",
+                "title": "Cuisines",
+                "key": "CUISINES",
+                "configType": "checkbox",
+                "visible": 1,
+                "options": [],
+                "detail": "",
+                "heading": "Cuisines",
+                "applicable": 1,
+                "searchable": 1
+            },
+            {}
+        ],
+        "sorts": [],
+        "configs": {},
+        "cards": [
+            {},
+            {},
+            {
+                "cardType": "seeAllRestaurants",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "seeAllRestaurants",
+                    "data": {
+                        "title": "SEE ALL",
+                        "totalOpenRestaurants": 1632,
+                        "cards": [
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "703453",
+                                    "name": "Sweetnest",
+                                    "uuid": "0493b5db-8155-4e34-80f5-071c5f637193",
+                                    "city": "6",
+                                    "area": "Wakad",
+                                    "totalRatingsString": "Too Few Ratings",
+                                    "cloudinaryImageId": "3a8838c410b8192d4c40d824e7e9d05a",
+                                    "cuisines": [
+                                        "Bakery",
+                                        "Desserts"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 40000,
+                                    "costForTwoString": "₹400 FOR TWO",
+                                    "deliveryTime": 37,
+                                    "minDeliveryTime": 37,
+                                    "maxDeliveryTime": 37,
+                                    "slaString": "37 MINS",
+                                    "lastMileTravel": 3.5,
+                                    "slugs": {
+                                        "restaurant": "sweetnest-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Shop no. 11, Horizon at, Choudhary Park, Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057, India",
+                                    "locality": "Shankar Kalat Nagar",
+                                    "parentId": 420062,
+                                    "unserviceable": false,
+                                    "veg": true,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "ribbon": [
+                                        {
+                                            "type": "PROMOTED"
+                                        }
+                                    ],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 4100,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 4100,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "4100",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "cid=6702859~p=1~eid=00000187-f54b-6102-324d-840600b80170",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "3.5 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "703453",
+                                        "deliveryTime": 37,
+                                        "minDeliveryTime": 37,
+                                        "maxDeliveryTime": 37,
+                                        "lastMileTravel": 3.5,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": true,
+                                    "avgRating": "--",
+                                    "totalRatings": 0,
+                                    "new": true
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "537771",
+                                    "name": "Iceberg Organic Icecreams",
+                                    "uuid": "caaf24cf-b993-49a5-9b32-0f3905303a33",
+                                    "city": "6",
+                                    "area": "Hinjawadi",
+                                    "totalRatingsString": "Too Few Ratings",
+                                    "cloudinaryImageId": "9eb14d77e91e450855eb8337be17406b",
+                                    "cuisines": [
+                                        "Ice Cream"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 20000,
+                                    "costForTwoString": "₹200 FOR TWO",
+                                    "deliveryTime": 32,
+                                    "minDeliveryTime": 32,
+                                    "maxDeliveryTime": 32,
+                                    "slaString": "32 MINS",
+                                    "lastMileTravel": 0.6000000238418579,
+                                    "slugs": {
+                                        "restaurant": "iceberg-organic-icecreams-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "FIRST FLOOR S NO 39/1 HINJEWADI WAKAD ROAD NR SHELL PETROL PUMP OPP YES BANK HINJEWADI , Mulshi, Pune, Maharashtra-411057",
+                                    "locality": "Wakad",
+                                    "parentId": 10825,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "FLAT100 off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "FLAT100 off | Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "FLAT100 off | Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "₹100 OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "FLAT100 off | Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "0.6 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "537771",
+                                        "deliveryTime": 32,
+                                        "minDeliveryTime": 32,
+                                        "maxDeliveryTime": 32,
+                                        "lastMileTravel": 0.6000000238418579,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "--",
+                                    "totalRatings": 0,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "355982",
+                                    "name": "Hyderabadi Biryani Express",
+                                    "uuid": "d451ae93-0500-4216-80db-e04959471758",
+                                    "city": "6",
+                                    "area": "Wakad",
+                                    "totalRatingsString": "1000+ ratings",
+                                    "cloudinaryImageId": "oz1780upqnfzisd5gi3s",
+                                    "cuisines": [
+                                        "Biryani"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 25000,
+                                    "costForTwoString": "₹250 FOR TWO",
+                                    "deliveryTime": 30,
+                                    "minDeliveryTime": 30,
+                                    "maxDeliveryTime": 30,
+                                    "slaString": "30 MINS",
+                                    "lastMileTravel": 4.300000190734863,
+                                    "slugs": {
+                                        "restaurant": "hyderabadi-biryani-express-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Shop 1, Survey 177/2/1, Datta Mandir road Yamuna Nagar, Wakad, Pune 411057",
+                                    "locality": "Yamuna Nagar",
+                                    "parentId": 105161,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "Flat ₹125 off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Flat ₹125 off on orders above ₹249",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "Flat ₹125 off on orders above ₹249 | Use code MATCHDEAL125",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "₹125 OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use MATCHDEAL125",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "Flat ₹125 off on orders above ₹249 | Use code MATCHDEAL125",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 4100,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 4100,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "4100",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "4.3 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "355982",
+                                        "deliveryTime": 30,
+                                        "minDeliveryTime": 30,
+                                        "maxDeliveryTime": 30,
+                                        "lastMileTravel": 4.300000190734863,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "3.2",
+                                    "totalRatings": 1000,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "636500",
+                                    "name": "Bodypower Cafe",
+                                    "uuid": "7164129c-501a-463b-a236-99f0556bc92d",
+                                    "city": "6",
+                                    "area": "Baner",
+                                    "totalRatingsString": "100+ ratings",
+                                    "cloudinaryImageId": "mrldlkymadas5fzvmqj3",
+                                    "cuisines": [
+                                        "Pastas",
+                                        "Indian",
+                                        "Desserts",
+                                        "South Indian",
+                                        "Salads",
+                                        "Healthy Food",
+                                        "Pizzas",
+                                        "Snacks",
+                                        "Biryani"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 45000,
+                                    "costForTwoString": "₹450 FOR TWO",
+                                    "deliveryTime": 40,
+                                    "minDeliveryTime": 40,
+                                    "maxDeliveryTime": 40,
+                                    "slaString": "40 MINS",
+                                    "lastMileTravel": 7.800000190734863,
+                                    "slugs": {
+                                        "restaurant": "bodypower-cafe-baner-baner",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Office No:3, Floor No:1st, Building Name: Prime Rose The Mall Block Sector:Baner, Pune-45,, Aundh, Pune, , Maharashtra, 411045",
+                                    "locality": "Aundh",
+                                    "parentId": 280671,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "FLAT150 off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "FLAT150 off | Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "FLAT150 off | Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "₹150 OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "FLAT150 off | Use FLATDEAL",
+                                                "discountType": "Flat",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "ribbon": [
+                                        {
+                                            "type": "PROMOTED"
+                                        }
+                                    ],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 6500,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 6500,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "6500",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "cid=6619038~p=4~eid=00000187-f54b-6102-324d-840700b80452",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "7.8 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "636500",
+                                        "deliveryTime": 40,
+                                        "minDeliveryTime": 40,
+                                        "maxDeliveryTime": 40,
+                                        "lastMileTravel": 7.800000190734863,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": true,
+                                    "avgRating": "4.4",
+                                    "totalRatings": 100,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "449900",
+                                    "name": "Greek",
+                                    "uuid": "c67ee6da-38ce-4136-9483-98459863494f",
+                                    "city": "6",
+                                    "area": "Wakad",
+                                    "totalRatingsString": "50+ ratings",
+                                    "cloudinaryImageId": "y2uc1dpn5tugxxdziolr",
+                                    "cuisines": [
+                                        "Chinese",
+                                        "Biryani",
+                                        "Beverages"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 35000,
+                                    "costForTwoString": "₹350 FOR TWO",
+                                    "deliveryTime": 34,
+                                    "minDeliveryTime": 34,
+                                    "maxDeliveryTime": 34,
+                                    "slaString": "34 MINS",
+                                    "lastMileTravel": 4.199999809265137,
+                                    "slugs": {
+                                        "restaurant": "greek-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Sr 174/3/2, Datta CL, Near Axis Bank Datta Mandir road, wakad, Pune411057",
+                                    "locality": "Datta Mandir road",
+                                    "parentId": 270647,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 4100,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 4100,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "4100",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "4.1 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "449900",
+                                        "deliveryTime": 34,
+                                        "minDeliveryTime": 34,
+                                        "maxDeliveryTime": 34,
+                                        "lastMileTravel": 4.199999809265137,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "4.3",
+                                    "totalRatings": 50,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "204551",
+                                    "name": "Cake Choice",
+                                    "uuid": "93410a6f-c1a0-4b97-a0ba-9dc7f77a5f63",
+                                    "city": "6",
+                                    "area": "Hinjawadi",
+                                    "totalRatingsString": "Too Few Ratings",
+                                    "cloudinaryImageId": "ydbmrxicgeujquk7nzue",
+                                    "cuisines": [
+                                        "Beverages"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 20000,
+                                    "costForTwoString": "₹200 FOR TWO",
+                                    "deliveryTime": 32,
+                                    "minDeliveryTime": 32,
+                                    "maxDeliveryTime": 32,
+                                    "slaString": "32 MINS",
+                                    "lastMileTravel": 1.600000023841858,
+                                    "slugs": {
+                                        "restaurant": "cake-choice-hinjewadi-hinjewadi",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Shop No. 1 & 2, Saikrishna Building S.No. 220/5/3A, Opp.P.D.C.C., Hinjewadi, Pune - 57, Mulsi & Vella, Pune PMC & Rural( Maharashtra) - 411057",
+                                    "locality": "1st Phase",
+                                    "parentId": 54805,
+                                    "unserviceable": false,
+                                    "veg": true,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "1.6 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "204551",
+                                        "deliveryTime": 32,
+                                        "minDeliveryTime": 32,
+                                        "maxDeliveryTime": 32,
+                                        "lastMileTravel": 1.600000023841858,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "--",
+                                    "totalRatings": 0,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "428279",
+                                    "name": "Cafe Coffee Day",
+                                    "uuid": "0e511172-fe0b-4255-a399-fb9636c3f571",
+                                    "city": "6",
+                                    "area": "Wakad",
+                                    "totalRatingsString": "100+ ratings",
+                                    "cloudinaryImageId": "b925459fbc1faf59f02f7289eb079a74",
+                                    "cuisines": [
+                                        "Beverages",
+                                        "Snacks",
+                                        "Desserts"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 30000,
+                                    "costForTwoString": "₹300 FOR TWO",
+                                    "deliveryTime": 34,
+                                    "minDeliveryTime": 34,
+                                    "maxDeliveryTime": 34,
+                                    "slaString": "34 MINS",
+                                    "lastMileTravel": 4.099999904632568,
+                                    "slugs": {
+                                        "restaurant": "cafe-coffee-day-9-avenue-building-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "SHOP NO 1, 9 AVENUE BUILDING, S.NO 186, CS NO. 444(PT), 445 TO 450, SHANKAR KALAT NAGAR, WAKAD, PUNE 411057, Pune PCMC, Maharashtra",
+                                    "locality": "Shankar Kalat Nagar",
+                                    "parentId": 1,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "30% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "30% off | Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "30% off up to ₹75 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "30% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "30% off up to ₹75 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "ribbon": [
+                                        {
+                                            "type": "PROMOTED"
+                                        }
+                                    ],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 4100,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 4100,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "4100",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "cid=6676265~p=7~eid=00000187-f54b-6102-324d-840800b80769",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "4 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "428279",
+                                        "deliveryTime": 34,
+                                        "minDeliveryTime": 34,
+                                        "maxDeliveryTime": 34,
+                                        "lastMileTravel": 4.099999904632568,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": true,
+                                    "avgRating": "3.9",
+                                    "totalRatings": 100,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "133274",
+                                    "name": "Creamy Crust - Wakad",
+                                    "uuid": "2e10e8ca-afd0-4d4b-8906-f3072a85c39a",
+                                    "city": "6",
+                                    "area": "Wakad",
+                                    "totalRatingsString": "50+ ratings",
+                                    "cloudinaryImageId": "cnsjjmxvl8dsmeiywgsq",
+                                    "cuisines": [
+                                        "Desserts",
+                                        "Bakery"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 40000,
+                                    "costForTwoString": "₹400 FOR TWO",
+                                    "deliveryTime": 33,
+                                    "minDeliveryTime": 33,
+                                    "maxDeliveryTime": 33,
+                                    "slaString": "33 MINS",
+                                    "lastMileTravel": 4.099999904632568,
+                                    "slugs": {
+                                        "restaurant": "the-cake-cream-factory-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Datta Mandir Road, Wakad, Pune",
+                                    "locality": "Datta Mandir Road",
+                                    "parentId": 206211,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "60% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "60% off | Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "60% off up to ₹120 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "60% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "60% off up to ₹120 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 4100,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 4100,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "4100",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "4 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "133274",
+                                        "deliveryTime": 33,
+                                        "minDeliveryTime": 33,
+                                        "maxDeliveryTime": 33,
+                                        "lastMileTravel": 4.099999904632568,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "4.7",
+                                    "totalRatings": 50,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "63180",
+                                    "name": "24/7 Gallery Cafe By Hyatt Place",
+                                    "uuid": "48cafe55-d6f8-45c0-8e7b-364f3a1869c6",
+                                    "city": "6",
+                                    "area": "Hyatt Place",
+                                    "totalRatingsString": "100+ ratings",
+                                    "cloudinaryImageId": "e9ljqno24qk6gviit8ic",
+                                    "cuisines": [
+                                        "Indian"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 80000,
+                                    "costForTwoString": "₹800 FOR TWO",
+                                    "deliveryTime": 35,
+                                    "minDeliveryTime": 35,
+                                    "maxDeliveryTime": 35,
+                                    "slaString": "35 MINS",
+                                    "lastMileTravel": 1.7000000476837158,
+                                    "slugs": {
+                                        "restaurant": "hyatt-place-rajiv-gandhi-infotech-park-phase-1-hinjewadi-hinjewadi",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "HOTEL HYATT PLACE, rajiv gandhi infotech park, phase 1, hinjewadi, pune, maharashtra. 411057",
+                                    "locality": "Hinjewadi",
+                                    "parentId": 230574,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "1.7 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "63180",
+                                        "deliveryTime": 35,
+                                        "minDeliveryTime": 35,
+                                        "maxDeliveryTime": 35,
+                                        "lastMileTravel": 1.7000000476837158,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "3.2",
+                                    "totalRatings": 100,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "261905",
+                                    "name": "Zeeshan - Apna Hyderabadi Food",
+                                    "uuid": "3f179041-324d-4004-af33-54aaecb664e4",
+                                    "city": "6",
+                                    "area": "Hinjawadi",
+                                    "totalRatingsString": "5000+ ratings",
+                                    "cloudinaryImageId": "de56dffcc29d6ad046285c5b664bda8f",
+                                    "cuisines": [
+                                        "Biryani",
+                                        "North Indian",
+                                        "Tandoor",
+                                        "Sweets",
+                                        "Mughlai",
+                                        "Beverages"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 40000,
+                                    "costForTwoString": "₹400 FOR TWO",
+                                    "deliveryTime": 19,
+                                    "minDeliveryTime": 19,
+                                    "maxDeliveryTime": 19,
+                                    "slaString": "19 MINS",
+                                    "lastMileTravel": 1.7999999523162842,
+                                    "slugs": {
+                                        "restaurant": "zeeshan-restaurant---apna-hyderabadi-food-hinjewadi-hinjewadi",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "Rajiv Gandhi Info-tech Park Next To HDFC Bank, Hinjawadi Phase 1 Rd, beside Pall Corporation, Hinjawadi, Pune, Maharashtra 411057",
+                                    "locality": "Rajiv Gandhi Infotech Park",
+                                    "parentId": 2981,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "50% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "50% off | Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "50% off up to ₹100 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "50% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "50% off up to ₹100 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "ribbon": [
+                                        {
+                                            "type": "PROMOTED"
+                                        }
+                                    ],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [],
+                                        "totalFees": 0,
+                                        "message": "",
+                                        "title": "",
+                                        "amount": "",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "cid=6616269~p=10~eid=00000187-f54b-6102-324d-840900b80a68",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "1.7 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "261905",
+                                        "deliveryTime": 19,
+                                        "minDeliveryTime": 19,
+                                        "maxDeliveryTime": 19,
+                                        "lastMileTravel": 1.7999999523162842,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": true,
+                                    "avgRating": "3.8",
+                                    "totalRatings": 5000,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "446872",
+                                    "name": "Pizza Bites",
+                                    "uuid": "6eb6bc75-3b2b-4a9e-a78f-7158f927440e",
+                                    "city": "6",
+                                    "area": "Hinjawadi",
+                                    "totalRatingsString": "50+ ratings",
+                                    "cloudinaryImageId": "be87ef87d60b0e6baa2a24c080065c30",
+                                    "cuisines": [
+                                        "Pizzas",
+                                        "Italian",
+                                        "Pastas",
+                                        "Desserts"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 30000,
+                                    "costForTwoString": "₹300 FOR TWO",
+                                    "deliveryTime": 30,
+                                    "minDeliveryTime": 30,
+                                    "maxDeliveryTime": 30,
+                                    "slaString": "30 MINS",
+                                    "lastMileTravel": 1,
+                                    "slugs": {
+                                        "restaurant": "pizza-bites-hinjewadi-hinjewadi",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "SHOP NO. 9, MHATOBA COMPLEX, OPPOSITE BIRLA SOFT GATE NO. 1, HINJWADI PHASE 1, PUNE, Mulshi & Vella, Pune PMC & Rural, Maharashtra, 411057",
+                                    "locality": "Mhatoba Complex",
+                                    "parentId": 158354,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "1 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "446872",
+                                        "deliveryTime": 30,
+                                        "minDeliveryTime": 30,
+                                        "maxDeliveryTime": 30,
+                                        "lastMileTravel": 1,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "3.3",
+                                    "totalRatings": 50,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "657682",
+                                    "name": "Bird Valley",
+                                    "uuid": "aef17c57-349a-4b0a-8b0f-127fcbf6abdf",
+                                    "city": "6",
+                                    "area": "Hinjewadi",
+                                    "totalRatingsString": "50+ ratings",
+                                    "cloudinaryImageId": "67c62ba8e806d8bb120afe24181227e2",
+                                    "cuisines": [
+                                        "Fast Food",
+                                        "North Indian",
+                                        "Chinese",
+                                        "Continental",
+                                        "Indian"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 100000,
+                                    "costForTwoString": "₹1000 FOR TWO",
+                                    "deliveryTime": 32,
+                                    "minDeliveryTime": 32,
+                                    "maxDeliveryTime": 32,
+                                    "slaString": "32 MINS",
+                                    "lastMileTravel": 2.799999952316284,
+                                    "slugs": {
+                                        "restaurant": "bird-valley-hinjewadi-hinjewadi",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "SR NO 172/4A NEAR PARANJAPE SCHEME HINJAVADI , Mulshi, Pune, Maharashtra, 411057",
+                                    "locality": "Mulshi",
+                                    "parentId": 2708,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "15% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "15% off on all orders",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "15% off on all orders",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "15% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "15% off on all orders",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "ribbon": [
+                                        {
+                                            "type": "PROMOTED"
+                                        }
+                                    ],
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "cid=6690454~p=16~eid=00000187-f54b-6102-324d-840b00b81031",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "2.7 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "657682",
+                                        "deliveryTime": 32,
+                                        "minDeliveryTime": 32,
+                                        "maxDeliveryTime": 32,
+                                        "lastMileTravel": 2.799999952316284,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": true,
+                                    "avgRating": "4.0",
+                                    "totalRatings": 50,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "469524",
+                                    "name": "Yummy No Tummy",
+                                    "uuid": "0393c97e-0136-4416-bd31-652fc3b122c9",
+                                    "city": "6",
+                                    "area": "Hinjawadi",
+                                    "totalRatingsString": "100+ ratings",
+                                    "cloudinaryImageId": "ahzbvtr2fdsupshsyvt2",
+                                    "cuisines": [
+                                        "Fast Food",
+                                        "North Indian",
+                                        "Chinese"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 15000,
+                                    "costForTwoString": "₹150 FOR TWO",
+                                    "deliveryTime": 33,
+                                    "minDeliveryTime": 33,
+                                    "maxDeliveryTime": 33,
+                                    "slaString": "33 MINS",
+                                    "lastMileTravel": 2.5999999046325684,
+                                    "slugs": {
+                                        "restaurant": "yummy-no-tummy-hinjewadi-hinjewadi",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "JP4H+73H, Phase 1, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057, India",
+                                    "locality": "Rajiv Gandhi Infotech Park",
+                                    "parentId": 281962,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "40% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "40% off | Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "40% off up to ₹80 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "40% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "40% off up to ₹80 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "2.5 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "469524",
+                                        "deliveryTime": 33,
+                                        "minDeliveryTime": 33,
+                                        "maxDeliveryTime": 33,
+                                        "lastMileTravel": 2.5999999046325684,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "3.8",
+                                    "totalRatings": 100,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "626035",
+                                    "name": "Kwality Walls Frozen Dessert and Ice Cream Shop",
+                                    "uuid": "f79a10a3-4439-48ac-8a17-ff6f96756aba",
+                                    "city": "6",
+                                    "area": "Hinjawadi",
+                                    "totalRatingsString": "20+ ratings",
+                                    "cloudinaryImageId": "rndr5frdsmi45igl0kr4",
+                                    "cuisines": [
+                                        "Desserts",
+                                        "Ice Cream",
+                                        "Ice Cream Cakes"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 20000,
+                                    "costForTwoString": "₹200 FOR TWO",
+                                    "deliveryTime": 18,
+                                    "minDeliveryTime": 18,
+                                    "maxDeliveryTime": 18,
+                                    "slaString": "18 MINS",
+                                    "lastMileTravel": 1,
+                                    "slugs": {
+                                        "restaurant": "kwality-walls-frozen-dessert-and-ice-cream-shop-hinjewadi-hinjewadi-13",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "NEW MATOSHREE MEDICO: SHOP NO.1, GANGA ESTATE SR NO.152/2/2/1 & MILKAT NO 1129, NEAR REGISTRATION OFFICE, MARUNJI ROAD, HINJEWADI, MULSHI, PUNE, MAHARASHTRA- 411057 (HUL- I10A286P4972)",
+                                    "locality": "Marunji Road",
+                                    "parentId": 582,
+                                    "unserviceable": false,
+                                    "veg": true,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "50% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "50% off | Use SWIGGYIT",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "50% off up to ₹100 | Use code SWIGGYIT",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "50% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use SWIGGYIT",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "50% off up to ₹100 | Use code SWIGGYIT",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 3300,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 3300,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "3300",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "1 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "626035",
+                                        "deliveryTime": 18,
+                                        "minDeliveryTime": 18,
+                                        "maxDeliveryTime": 18,
+                                        "lastMileTravel": 1,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "4.3",
+                                    "totalRatings": 20,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            },
+                            {
+                                "type": "restaurant",
+                                "data": {
+                                    "type": "F",
+                                    "id": "519094",
+                                    "name": "Laziz Xprs",
+                                    "uuid": "75bd6247-ef0b-4c45-bd3b-efdeeae5691c",
+                                    "city": "6",
+                                    "area": "Wakad",
+                                    "totalRatingsString": "20+ ratings",
+                                    "cloudinaryImageId": "nsi3z14tpcssf5penrwo",
+                                    "cuisines": [
+                                        "North Indian",
+                                        "Biryani",
+                                        "Snacks"
+                                    ],
+                                    "tags": [],
+                                    "costForTwo": 30000,
+                                    "costForTwoString": "₹300 FOR TWO",
+                                    "deliveryTime": 33,
+                                    "minDeliveryTime": 33,
+                                    "maxDeliveryTime": 33,
+                                    "slaString": "33 MINS",
+                                    "lastMileTravel": 4.400000095367432,
+                                    "slugs": {
+                                        "restaurant": "laziz-xprs-wakad-wakad",
+                                        "city": "pune"
+                                    },
+                                    "cityState": "6",
+                                    "address": "SHOP NO 1 GROUND FLOOR YAMUNA NAGAR \\\\\\\\r\\\\\\\\nS NO 177/2/1B OPP HIMALAYA ICE CREAM \\\\\\\\r\\\\\\\\nWAKAD PUNE, PUNE PCMC ward No-53, Pune PCMC, Maharashtra-411057",
+                                    "locality": "Yamuna Nagar",
+                                    "parentId": 290769,
+                                    "unserviceable": false,
+                                    "veg": false,
+                                    "select": false,
+                                    "favorite": false,
+                                    "tradeCampaignHeaders": [],
+                                    "aggregatedDiscountInfo": {
+                                        "header": "60% off",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "60% off | Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "60% off up to ₹120 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "aggregatedDiscountInfoV2": {
+                                        "header": "60% OFF",
+                                        "shortDescriptionList": [
+                                            {
+                                                "meta": "Use TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "descriptionList": [
+                                            {
+                                                "meta": "60% off up to ₹120 | Use code TRYNEW",
+                                                "discountType": "Percentage",
+                                                "operationType": "RESTAURANT"
+                                            }
+                                        ],
+                                        "subHeader": "",
+                                        "headerType": 0,
+                                        "superFreedel": ""
+                                    },
+                                    "chain": [],
+                                    "feeDetails": {
+                                        "fees": [
+                                            {
+                                                "name": "distance",
+                                                "fee": 4100,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "time",
+                                                "fee": 0,
+                                                "message": ""
+                                            },
+                                            {
+                                                "name": "special",
+                                                "fee": 0,
+                                                "message": ""
+                                            }
+                                        ],
+                                        "totalFees": 4100,
+                                        "message": "",
+                                        "title": "Delivery Charge",
+                                        "amount": "4100",
+                                        "icon": ""
+                                    },
+                                    "availability": {
+                                        "opened": true,
+                                        "nextOpenMessage": "",
+                                        "nextCloseMessage": ""
+                                    },
+                                    "longDistanceEnabled": 0,
+                                    "rainMode": "NONE",
+                                    "thirdPartyAddress": false,
+                                    "thirdPartyVendor": "",
+                                    "adTrackingID": "",
+                                    "badges": {
+                                        "imageBased": [],
+                                        "textBased": [],
+                                        "textExtendedBadges": []
+                                    },
+                                    "lastMileTravelString": "4.4 kms",
+                                    "hasSurge": false,
+                                    "sla": {
+                                        "restaurantId": "519094",
+                                        "deliveryTime": 33,
+                                        "minDeliveryTime": 33,
+                                        "maxDeliveryTime": 33,
+                                        "lastMileTravel": 4.400000095367432,
+                                        "lastMileDistance": 0,
+                                        "serviceability": "SERVICEABLE",
+                                        "rainMode": "NONE",
+                                        "longDistance": "NOT_LONG_DISTANCE",
+                                        "preferentialService": false,
+                                        "iconType": "EMPTY"
+                                    },
+                                    "promoted": false,
+                                    "avgRating": "3.3",
+                                    "totalRatings": 20,
+                                    "new": false
+                                },
+                                "subtype": "basic"
+                            }
+                        ],
+                        "totalRestaurants": 1632
+                    },
+                    "subtype": "personalized"
+                },
+                "parentWidget": false
+            }
+        ],
+        "nextPageFetch": 0
+    },
+    "tid": "c1ae7e29-c416-4c16-8e31-f6e84923a1c8",
+    "sid": "6x1d29ba-4ba8-4664-8d73-5c3b905e1a3b",
+    "deviceId": "c137ab77-b990-add2-74dc-1faaa2e96b01",
+    "csrfToken": "I2QwgJ0sfT0g-c20H_9ZrNDMjmrcqEx2b3n48sKc"
 }

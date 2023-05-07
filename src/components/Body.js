@@ -47,7 +47,9 @@ const Body = () => {
     return (allRestaurants.length === 0) ? < ShimmerUI /> : (
         <>
             <div className="search-container p-5 bg-pink-50 my-5">
-                <input type="text"
+                <input
+                    data-testid="search-input"
+                    type="text"
                     className="search-input p-2 m-2 focus:outline-none focus:bg-green-50 "
                     placeholder="Search"
                     value={searchText}
