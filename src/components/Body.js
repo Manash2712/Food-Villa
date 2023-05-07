@@ -54,6 +54,7 @@ const Body = () => {
                     onChange={(e) => { setSearchText(e.target.value) }}
                 />
                 <button
+                    data-testid="search-btn"
                     className="search-btn p-2 m-2 bg-purple-800 text-white rounded-md hover:bg-purple-950"
                     onClick={() => {
                         // update the restaurants
@@ -84,7 +85,7 @@ const Body = () => {
                 />
 
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap" data-testid="restaurant-list">
 
                 {/* <RestaurantCard {...restaurantList[0].data} /> */}
                 {/* using spread operator to pass multiple props */}
